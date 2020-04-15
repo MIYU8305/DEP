@@ -67,7 +67,8 @@ class PyMon:
 
         for i, code in enumerate(self.kosdaq_codes):
             if i == 999:
-                time.sleep(60)
+                print("waiting..." + str(600))
+                time.sleep(600)
             print(i, '/', num)
             if self.check_speedy_rising_volume(code):
                 print(code)
